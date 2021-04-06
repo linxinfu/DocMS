@@ -1,0 +1,15 @@
+/* miniprogram/pages/keyStore/addKey/addKey.wxss */
+.key-form{
+  margin-top: 30rpx;
+}
+
+.add-key-btn {
+  margin-top: 70rpx;
+  width: 80%;
+}
+
+.pwd-progress{
+  width: 100%;
+  background-color: white;
+  height: 30rpx;
+}

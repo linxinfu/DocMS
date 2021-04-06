@@ -1,0 +1,20 @@
+<view class="container">
+  <view class="key-form row-wrap">
+    <van-cell-group>
+      <van-field value="{{ name }}"  error-message="{{ errMsg.name }}" data-prop="name" required clearable label="名称" placeholder="请输入名称" bind:change="onChange" />
+      <van-field value="{{ account }}" error-message="{{ errMsg.account }}" data-prop="account" required clearable label="账号" placeholder="请输入账号" bind:change="onChange" />
+      <van-field value="{{ password }}" error-message="{{ errMsg.password }}" data-prop="password" required clearable label="密码" placeholder="请输入密码" bind:change="onChange" use-button-slot>
+        <van-button bindtap="genPassword" slot="button" size="small" type="info">生成</van-button>
+      </van-field>
+      <view class="pwd-progress">
+       <van-progress pivot-text="{{ progress.text }}" color="{{ progress.color }}" percentage="{{ progress.percentage }}" />
+      </view>
+      <van-field value="{{ remark }}" data-prop="remark" clearable label="备注" placeholder="请输入备注" bind:change="onChange" />
+      <van-field value="{{ security }}" error-message="{{ errMsg.security }}" data-prop="security" required clearable label="主密码" placeholder="请输入主密码" bind:change="onChange" icon="question-o" />
+    </van-cell-group>
+  </view>
+
+    <view class="add-key-btn">
+      <van-button bindtap="addKey" type="info" size="normal" round block>确定</van-button>
+    </view>
+</view>
