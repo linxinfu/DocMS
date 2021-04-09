@@ -1,0 +1,35 @@
+<!--miniprogram/pages/home/home.wxml-->
+<view class="container">
+  <!-- 头部轮播图 -->
+  <swiper indicator-dots="true" autoplay="true" interval="2000">
+    <swiper-item>
+      <image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3666830035,3603210617&fm=26&gp=0.jpg" />
+    </swiper-item>
+    <swiper-item>
+      <image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=141798959,3693415905&fm=26&gp=0.jpg" />
+    </swiper-item>
+    <swiper-item>
+      <image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3832107707,1422152402&fm=26&gp=0.jpg" />
+    </swiper-item>
+  </swiper>
+
+  <!-- 功能栏 -->
+
+  <!-- 普通用户功能导航 -->
+  <view class="nav-user">
+    <van-grid gutter="{{ 10 }}">
+      <van-grid-item icon="photo-o" text="借阅" />
+      <van-grid-item icon="photo-o" text="我的借阅" />
+      <van-grid-item icon="photo-o" text="还书" />
+      <van-grid-item icon="photo-o" text="浏览历史" />
+    </van-grid>
+
+    <!-- 管理员功能导航 -->
+    <van-grid gutter="{{ 10 }}">
+      <van-grid-item icon="photo-o" text="用户管理" />
+      <van-grid-item icon="photo-o" text="书架管理" />
+      <van-grid-item icon="photo-o" text="文献管理" />
+      <van-grid-item icon="photo-o" text="逾期借阅" />
+    </van-grid>
+  </view>
+</view>

@@ -1,0 +1,26 @@
+/* miniprogram/pages/keyStore/addKey/addKey.wxss */
+.key-form {
+	margin-top: 30rpx;
+}
+
+.title{
+	margin-top: 10rpx;
+	font-weight: bold;
+}
+.logo {
+	margin-top: 150rpx;
+}
+
+.login-btn {
+	margin-top: 70rpx;
+	width: 80%;
+}
+
+.input-info{
+	width: 80%;
+}
+
+.wechat-login-msg{
+	text-align: center;
+	color: #09C7F7;
+}

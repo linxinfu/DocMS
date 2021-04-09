@@ -1,0 +1,37 @@
+<view class="container">
+
+	<!-- 顶部图标 -->
+	<view>
+		<view class="logo">
+			<van-image width="100" height="100" src="/images/dms-logo.png" />
+		</view>
+		<view class="title">文献管理系统</view>
+	</view>
+
+	<!-- 账号密码输入框 -->
+	<van-cell-group class="input-info">
+		<view class="key-form row-wrap">
+			<van-field value="{{ account }}" error-message="{{ errMsg.account }}" data-prop="account" required clearable
+				label="账号" placeholder="管理员账号" bind:change="onChange" />
+			<van-field value="{{ password }}" error-message="{{ errMsg.password }}" data-prop="password" required clearable
+				label="密码" placeholder="管理员密码" bind:change="onChange" type="password">
+				<!-- <van-button slot="button" size="small" type="info">生成</van-button> -->
+			</van-field>
+		</view>
+	</van-cell-group>
+	<view class="login-btn">
+		<van-button bindtap="login" type="info" size="normal" round block>确定</van-button>
+	</view>
+
+	<!-- 底部登录提示 -->
+	<view>
+		<view class="logo">
+			<van-image bind:click="wechatLogin" round width="80" height="80" src="/images/wechat-logo.jpeg" />
+		</view>
+		<view class="wechat-login-msg">微信登录</view>
+	</view>
+
+	<!-- 占位符，使用Toast组件必须加 -->
+	<van-toast id="van-toast" />
+
+</view>
